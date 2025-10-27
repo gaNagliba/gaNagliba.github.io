@@ -1,0 +1,95 @@
+/* --- Global Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* --- Body --- */
+body {
+  background-color: #020202;
+  color: #00ff99;
+  overflow-x: hidden;
+}
+
+/* --- Navbar --- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 3rem;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #00ffcc;
+  text-shadow: 0 0 8px #00ffcc;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin-left: 2rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #00ffcc;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #00ffcc;
+}
+
+/* --- Sections --- */
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 2rem 3rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 10px #00ffcc;
+}
+
+.section-image {
+  width: 80%;
+  max-width: 1000px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #00ffcc;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 35px #00ffcc;
+}
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #020202;
+  color: #00ffcc;
+  border-top: 1px solid #00ffcc44;
+  font-size: 0.9rem;
+}
