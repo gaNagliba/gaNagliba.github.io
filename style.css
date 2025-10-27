@@ -206,3 +206,29 @@ body{
 .cert-card .verify:hover {
   color: #fff;
 }
+/* ---------- BADGES SECTION ---------- */
+.badges-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 1.5rem;
+}
+
+.badges-grid img {
+  width: 200px; /* fixed equal width */
+  height: auto; /* maintain correct proportions */
+  object-fit: contain;
+  border-radius: 12px;
+  border: 1px solid #144e57;
+  box-shadow: 0 0 18px rgba(0, 255, 166, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  background-color: rgba(10, 15, 20, 0.5);
+  padding: 8px;
+}
+
+.badges-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px rgba(0, 255, 166, 0.45);
+}
