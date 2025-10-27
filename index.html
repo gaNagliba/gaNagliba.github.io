@@ -2,43 +2,186 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gerald Andre C. Nagliba | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gerald Andre C. Nagliba — ePortfolio</title>
+  <meta name="description" content="Portfolio of Gerald Andre C. Nagliba — projects, badges, and certificates." />
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
 
 <body>
-  <header>
-    <nav class="navbar">
-      <h1 class="logo">G.A.N.</h1>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#badges">Badges</a></li>
-        <li><a href="#certificates">Certificates</a></li>
-      </ul>
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <a class="brand" href="#home">G.A.N.</a>
+    <nav>
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#badges" class="nav-link">Badges</a>
+      <a href="#certificates" class="nav-link">Certificates</a>
+      <a href="#contact" class="nav-link">Contact</a>
     </nav>
+    <a class="btn btn-outline" href="files/resume.pdf" download>Download Résumé</a>
+    <button class="mobile-toggle" aria-label="Toggle menu">
+      <!-- hamburger -->
+      <span></span><span></span><span></span>
+    </button>
   </header>
 
-  <!-- Landing Section -->
-  <section id="home" class="section">
-    <img src="images/landing.png" alt="Landing Page" class="section-image" />
+  <!-- Animated techy background -->
+  <div class="bg">
+    <div class="grid"></div>
+    <div class="radial"></div>
+  </div>
+
+  <!-- ========== HERO / HOME ========== -->
+  <section id="home" class="section hero">
+    <img src="images/landing.png" alt="Landing" class="hero-image reveal" />
+    <div class="hero-cta reveal">
+      <a class="btn btn-primary" href="#projects">Explore Projects</a>
+      <a class="btn btn-ghost" href="#contact">Get in touch</a>
+    </div>
   </section>
 
-  <!-- Badges Section -->
-  <section id="badges" class="section">
-    <h2 class="section-title">Badges</h2>
-    <img src="images/badges.png" alt="Badges" class="section-image" />
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section about">
+    <div class="about-card reveal">
+      <div class="about-media">
+        <img src="images/profile.jpg" alt="Gerald Andre C. Nagliba" onerror="this.style.display='none'"/>
+      </div>
+      <div class="about-text">
+        <h2 class="title">About Me</h2>
+        <p>
+          Hi! I’m <strong>Gerald Andre C. Nagliba</strong> — passionate about cloud computing,
+          systems development, and building reliable, secure, and performant solutions.
+          I enjoy turning ideas into usable experiences and learning new tools along the way.
+        </p>
+        <ul class="about-highlights">
+          <li>🎯 Focus areas: Cloud, Web, and Systems Fundamentals</li>
+          <li>🧰 Toolset: AWS | Git/GitHub | C/C++ | JavaScript | HTML/CSS</li>
+          <li>🏅 Certified/Badged (see below)</li>
+        </ul>
+        <div class="about-actions">
+          <a class="btn btn-primary" href="files/resume.pdf" download>Download Résumé</a>
+          <a class="btn btn-outline" href="#badges">View Badges</a>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Certificates Section -->
-  <section id="certificates" class="section">
-    <h2 class="section-title">Certificates</h2>
-    <img src="images/certificates.png" alt="Certificates" class="section-image" />
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="section projects">
+    <h2 class="title reveal">Projects</h2>
+    <p class="subtitle reveal">A few things I’ve been working on.</p>
+
+    <div class="cards">
+      <!-- Project Card 1 -->
+      <article class="card reveal">
+        <div class="card-body">
+          <h3>Cloud Notes API</h3>
+          <p>
+            A lightweight REST API deployed on AWS (API Gateway + Lambda + DynamoDB)
+            for creating and syncing notes across devices.
+          </p>
+        </div>
+        <div class="card-footer">
+          <span class="tag">AWS</span>
+          <span class="tag">Serverless</span>
+          <span class="tag">Node.js</span>
+          <div class="card-actions">
+            <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project Card 2 -->
+      <article class="card reveal">
+        <div class="card-body">
+          <h3>Portfolio Website</h3>
+          <p>
+            This ePortfolio with a dark tech aesthetic, scroll animations, and responsive layout —
+            hosted on GitHub Pages.
+          </p>
+        </div>
+        <div class="card-footer">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <div class="card-actions">
+            <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">Live</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project Card 3 -->
+      <article class="card reveal">
+        <div class="card-body">
+          <h3>C Fundamentals Lab</h3>
+          <p>
+            A set of clean, well-documented C exercises focusing on memory, pointers,
+            and data structures.
+          </p>
+        </div>
+        <div class="card-footer">
+          <span class="tag">C</span>
+          <span class="tag">Algorithms</span>
+          <div class="card-actions">
+            <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </div>
+      </article>
+    </div>
   </section>
 
-  <footer>
-    <p>© 2025 Gerald Andre C. Nagliba | Built with ❤️ using HTML, CSS, and JS</p>
-  </footer>
+  <!-- ========== BADGES ========== -->
+  <section id="badges" class="section media-section">
+    <h2 class="title reveal">Badges</h2>
+    <img class="section-image reveal" src="images/badges.png" alt="Badges" />
+  </section>
+
+  <!-- ========== CERTIFICATES ========== -->
+  <section id="certificates" class="section media-section">
+    <h2 class="title reveal">Certificates</h2>
+    <img class="section-image reveal" src="images/certificates.png" alt="Certificates" />
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section contact">
+    <h2 class="title reveal">Let’s Connect</h2>
+    <p class="subtitle reveal">I’m open to collaboration and opportunities.</p>
+
+    <div class="socials reveal">
+      <a class="social" href="mailto:gcarungay35@gmail.com" aria-label="Email">
+        <!-- Email SVG -->
+        <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+          <path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6zm2 0l8 6 8-6M4 18h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Email
+      </a>
+
+      <a class="social" href="https://github.com/gaNagliba" target="_blank" rel="noopener" aria-label="GitHub">
+        <!-- GitHub SVG -->
+        <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+          <path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.57.11.78-.25.78-.55v-2.1c-3.17.69-3.84-1.35-3.84-1.35-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.53-.29-5.2-1.26-5.2-5.61 0-1.24.45-2.25 1.19-3.04-.12-.29-.52-1.46.11-3.04 0 0 .98-.31 3.2 1.16a11.06 11.06 0 0 1 5.82 0c2.22-1.47 3.2-1.16 3.2-1.16.63 1.58.23 2.75.11 3.04.74.79 1.19 1.8 1.19 3.04 0 4.36-2.67 5.31-5.22 5.6.41.36.77 1.08.77 2.19v3.24c0 .31.2.67.79.55A11.5 11.5 0 0 0 12 .5z" fill="currentColor"/>
+        </svg>
+        GitHub
+      </a>
+
+      <a class="social" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <!-- LinkedIn SVG -->
+        <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+          <path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5zM4 9h2v12H4zM9 9h2v1.7h.03C11.6 9.8 12.7 9 14.4 9 18 9 19 11.3 19 15v6h-2v-5.2c0-2.1-.7-3.6-2.4-3.6-1.3 0-2.1.9-2.4 1.8-.1.23-.1.55-.1.87V21H10V9z" fill="currentColor"/>
+        </svg>
+        LinkedIn
+      </a>
+    </div>
+
+    <div class="contact-actions reveal">
+      <a class="btn btn-primary" href="mailto:gcarungay35@gmail.com">Email Me</a>
+      <a class="btn btn-outline" href="files/resume.pdf" download>Download Résumé</a>
+    </div>
+  </section>
+
+  <button id="toTop" class="to-top" aria-label="Back to top">↑</button>
 </body>
 </html>
