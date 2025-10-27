@@ -106,11 +106,11 @@ body{
 .about-contact {
   margin-top: 1rem;
   font-size: 1rem;
-  color: #baf5e6;
+  color: #0b8d41;
 }
 
 .about-contact a {
-  color: #00ffe0;
+  color: #078841;
   text-decoration: none;
   transition: color 0.3s ease;
 }
