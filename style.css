@@ -206,6 +206,7 @@ body{
 .cert-card .verify:hover {
   color: #fff;
 }
+
 /* ---------- BADGES SECTION ---------- */
 .badges-grid {
   display: flex;
