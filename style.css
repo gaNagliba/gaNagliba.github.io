@@ -103,6 +103,24 @@ body{
 .about-highlights{ margin:10px 0 16px; padding-left:18px; }
 .about-actions{ display:flex; gap:10px; flex-wrap:wrap; }
 
+.about-contact {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #baf5e6;
+}
+
+.about-contact a {
+  color: #00ffe0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.about-contact a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px #00ffe0;
+}
+
+
 /* PROJECTS */
 .projects .cards{
   display:grid; gap:16px;
